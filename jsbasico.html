@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.css">
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="javascript.css">
+    <title>Tutorial JS - Básico</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="Logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="intro.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Tutoriais
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="jsbasico.html">JS Básico</a></li>
+              <li><a class="dropdown-item" href="jsdom.html">JS DOM</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="https://www.w3schools.com/js/default.asp">w3schools (p/ aprender +)</a></li>
+              <li><a class="dropdown-item" href="https://kmdtraveller.medium.com/estudando-javascript-básico-atividades-para-praticar-9c4bcbc62fe3">Exercícios (depois do tutorial)</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">JS Básico</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav> <br>
+
+  <div class="title-01">
+    <h1><strong>Javascript Básico</strong></h1> <br>
+    <h4 class="paragraph1">Nessa página você vai aprender o básico de Javascript, para ter uma noção básica de como a linguagem funciona.</h4> <br>
+  </div>
+
+  <section class="var">
+    <h2>1 - Variáveis</h2> 
+  
+    <div class="varintro">
+      <p>Podemos explicar as variáveis como "recipientes" para guardar dados, que podem ser letras, números e até mesmo funções para utilizarmos no código. Nós a usamos para armazenar e manipular dados de forma dinâmica, tornando nosso código mais legível e organizado.
+      Essas variáveis podem ser <strong>globais</strong> - em que todo o código pode acessar o valor da variável - ou <strong>locais</strong> - em que apenas um bloco de código consegue acessar esse valor (logo mais você entenderá o que é bloco de código).</p>~
+      <img src="img/var.jpg" alt="Exemplo de variável" title="Variável"><br>
+    </div>   
+    <h2>1.1 - Tipos de variáveis</h2> <br>
+    <p>Existem <strong>três</strong> tipos de variáveis possíveis em JavaScript:</p>
+    <ul>
+      <li>
+        <strong>var</strong> <p>Esse foi o primeiro tipo de variável disponível para a linguagem, e hoje em dia é pouco utilizado. Nesse tipo de variável os dados podem variar de acordo com o que o programador quiser colocar.</p>
+      </li>
+      <li>
+        <strong>let</strong> <p>Tipo mais comum de variável, funciona do mesmo jeito do "var", porém a única diferença é que os dados armazenados só podem ser acessados após a declaração da variável let, o que poderia não ocorrer com o "var".</p>
+      </li>
+      <li>
+        <strong>const</strong> <p>Tipo de variável em que os dados armazenados nela não são mais mutáveis a partir do momento em que você os declarou.</p>
+      </li>
+    </ul> <br>
+    <h2>1.2 - Tipos de dados</h2>
+    <p>No momento em que você atribui dados à variável, automaticamente esses dados terão um tipo definido de dado. Os principais tipos são:</p> <br>
+      <ul>
+        <li>
+          <strong>int</strong> <p>Tipo de dado que se refere à <strong>números inteiros</strong>; quando são decimais, dizemos que são <strong>float</strong> ou <strong>double</strong>;</p>
+        </li>
+        <li>
+          <strong>string</strong> <p>Se refere à uma <strong>cadeia de caracteres</strong>, ou seja, um conjunto de letras e números;</p>
+        </li>
+        <li>
+          <strong>boolean</strong> <p>Dados que são verdadeiros (true) ou falsos (false).</p>
+        </li> <br>
+        <div class="img-01">
+          <img src="img/code-snapshot/code-snapshot.png" alt="Exemplo 1 - Dados e variáveis"> <br>      
+        </div>
+        <li><strong>array</strong> <p>É uma estrutura que pode armazenar vários dados em uma única variável, organizados em uma sequência ordenada.</p>
+        </li> <br>
+        <div class="img-02">
+          <img src="img/code-snapshot/code-snapshot2.png" alt="Exemplo 2 - Array"> <br>
+        </div>
+        <br>
+        <li>
+          <strong>function</strong> <p>É um bloco de código criado para fazer uma tarefa específica definida pelo desenvolvedor.</p>
+        </li><br>
+        <div class="img-03">
+          <img src="img/code-snapshot/code-snapshot3.png" alt="Exemplo 3 - Function"> <br>
+        </div>
+      </ul>
+  </section> <br>
+  <section class="operadores">
+    <h2>2 - Operadores</h2>
+    <p>Os operadores são símbolos utilizados para realizar operações matemáticas, lógicas (como nas estruturas condicionais), atribuições de valores, entre outros. <br>
+    Os principais operadores em JavaScript podem se separar em 4 categorias:<br></p>
+    <ol>
+      <li>
+        <strong>Operadores aritméticos</strong>
+        <ul>
+          <li><strong>+</strong> - soma;</li>
+          <li><strong>-</strong> - subtração;</li>
+          <li><strong>*</strong> - multiplicação;</li>
+          <li><strong>/</strong> - divisão;</li>
+          <li><strong>%</strong> - mostra o resto da divisão de dois valores</li> <br>
+          <img src="img/code-snapshot/code-snapshot7.png" alt="Exemplo 7 - Operadores Aritméticos">
+        </ul>
+      </li> <br>
+      <li>
+        <strong>Operadores de atribuição</strong>
+        <ul>
+          <li><strong>=</strong> - atribui um valor a uma variável;</li>
+          <li><strong>+=, -=, *=</strong> e <strong>/=</strong> - realiza a operação indicada no operador (+, -, * ou /) e atribui o resultado a variável.</li>
+          <li><strong>,</strong> ou <strong>+</strong> - utilizados quando, na hora de mandar uma mensagem (console.log), concatenar (juntar) uma variável com outro texto, por exemplo.</li> <br>
+        
+        </ul>
+        <img src="img/code-snapshot/code-snapshot8.png" alt="Exemplo 8 - Operadores de Atribuição">
+      </li> <br>
+      <li>
+        <strong>Operadores de comparação</strong>
+        <ul>
+          <li><strong>==</strong> - Verifica se dois valores são iguais (1 sinal de igual é atribuição);</li>
+          <li><strong>===</strong> - Mesma função do anterior, mas verifica também se são do mesmo tipo (int, string, etc);</li>
+          <li><strong>></strong> e <strong><</strong> - Verifica se um valor é maior/menor que o outro;</li>
+          <li><strong>>=</strong> e <strong><=</strong> - Verifica se um valor é maior ou igual/menor ou igual a outro.</li>
+          <li><strong>!=</strong> - Verifica se dois valores são diferentes</li>
+          <li><strong>!==</strong> - Mesma função do anterior, só que também verifica se o tipo das variáveis (int, string, etc) são diferentes.</li>
+        </ul>
+        <img src="img/code-snapshot/code-snapshot9.png" alt="Exemplo 9 - Operadores de Comparação">
+      </li> <br>
+      <li>
+        <strong>Operadores lógicos</strong> (muito utilzados em estruturas condicionais)
+        <ul>
+          <li><strong>&& (AND - E)</strong> - Retorna verdadeiro se duas condições estabelecidas são verdadeiras;</li>
+          <li><strong>|| (OR - OU)</strong> - Retorna verdadeiro se uma das condições são verdadeiras;</li>
+          <li><strong>! (NOT - NÃO)</strong> - Inverte o valor lógico - verdadeiro vira falso e vice-versa.</li>
+        </ul> <br>
+        <img src="img/code-snapshot/code-snapshot10.png" alt="Exemplo 10 - Operadores Lógicos">
+      </li> 
+    </ol> <br>
+    <strong><h4>Bônus: incremento e decremento (++</strong> e <strong>--)</h4></strong>
+    <p>- São operadores utilizados nas estruturas de repetição (vai ser explicado mais pra frente), em que aumentam ou diminuem o valor numérico das variáveis de 1 em 1.</p>
+    <img src="img/code-snapshot/code-snapshot11.png" alt="Exemplo 11 - Incremento e Decremento">
+  </section> <br>
+
+  <section class="condicionais">
+    <h2>3 - Estruturas Condicionais</h2>
+    <p>
+      Essas estruturas são utilizadas para que um programa rode um bloco de código de acordo com uma condição estabelecida. <br>
+      Em JavaScript, as principais estruturas condicionais são <strong>if/else</strong> e <strong>elseif</strong>.
+    </p>
+    <ul>
+      <li>
+        <strong>if</strong> <p>É utilizado para verificar se uma condição for verdadeira. Se ela for verdadeira - if (condição) = true -, vai executar o bloco de código determinado.</p>
+        <img src="img/code-snapshot/code-snapshot4.png" alt="Exemplo 4 - if">
+      </li> <br>  
+      <li> 
+        <strong>else</strong> <p>Vem em conjunto com o <strong>if</strong> e é utilizado quando a condição determinada for falsa, para o programa executar outro bloco de código que for descrito.</p>
+        <img src="img/code-snapshot/code-snapshot5.png" alt="Exemplo 5 - else">
+      </li> <br>
+      <li>
+        <strong>elseif</strong> <p>É utilizado quando há mais possibilidades de condição fora do if/else, como no exemplo abaixo:</p>
+        <img src="img/code-snapshot/code-snapshot6.png" alt="Exemplo 6 - elseif">
+      </li> <br>  
+    </ul>
+  </section>
+
+  <section>
+    <h3>4 - Estruturas de Repetição</h3>
+    <p>
+      São estruturas que repetem um bloco de código enquanto uma condição for verdadeira. Em JavaScript, há <strong>três</strong> principais estruturas de repetição:
+    </p>
+    <ul>
+      <li>
+        <strong>for</strong> <p>É utilizado quando definimos o número de repetições para o bloco de código. Possui três partes principais: a <strong>definição da variável</strong>,
+        a <strong>limite de repetições do código</strong> e o <strong>incremento.</strong></p>
+        <img src="img/code-snapshot/code-snapshot12.png" alt="Exemplo 12 - for">
+      </li> <br>
+      <li>
+        <strong>while</strong> <p>É utilizado quando não é certa a quantidade de repetições do código, mas há uma condição que deve ser verdadeira para que o código repita.</p>
+        <img src="img/code-snapshot/code-snapshot13.png" alt="Exemplo 13 - while">
+      </li> <br>
+      <li>
+        <strong>do/while</strong> <p>Funciona do mesmo jeito que o while, mas o código é executado antes de verificar a condição.</p>
+        <img src="img/code-snapshot/code-snapshot14.png" alt="Exemplo 14 - do/while">
+      </li>
+    </ul>
+  </section> <br><br>
+  <h1 class="end"><strong>E aqui você finalizou o tutorial de Javascript básico!</strong></h1> <br><br>
+  <div class="continuar">
+    <h1><strong>Ir para a parte de DOM?</strong></h1>
+    <a href="jsdom.html"><button type="button" class="btn btn-warning"><strong>Ir para JS DOM</strong></button></a>
+  </div> <br><br>
+</body>
+</html>

@@ -1,0 +1,30 @@
+body{
+    font-family: "Poppins";
+    text-align: center;
+}
+#alerta{
+    width: fit-content;
+    background-color: rgb(245, 245, 99);
+    padding: 20px;
+    border-radius: 25px;
+    border-style: solid;
+    margin: auto;
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+}
+.title-02{
+    font-size: 50px;
+}
+.icon{
+    width: 55px;
+}
+.java-js{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.java-js h3{
+    font-size: 40px;
+}

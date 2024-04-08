@@ -1,0 +1,19 @@
+body{
+    font-family: "Poppins";
+    text-align: center;
+}
+body p{
+    font-size: 18px;
+}
+.acabou{
+    font-size: 60px;
+}
+.adeus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.adeus h1{
+    font-size: 50px;
+}

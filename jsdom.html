@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.css">
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="javascript.css">
+    <title>Tutorial JS - DOM</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="Logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="intro.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Tutoriais
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="jsbasico.html">JS Básico</a></li>
+                  <li><a class="dropdown-item" href="jsdom.html">JS DOM</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="https://www.w3schools.com/js/default.asp">w3schools (p/ aprender +)</a></li>
+                  <li><a class="dropdown-item" href="https://kmdtraveller.medium.com/estudando-javascript-básico-atividades-para-praticar-9c4bcbc62fe3">Exercícios (depois do tutorial)</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">JS DOM</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav> <br>
+
+    <h1><strong>Javascript DOM (Document Object Model)</strong></h1> <br>
+    <h4>Agora, você passará a aprender a parte de <strong>DOM (Document Object Model)</strong>do JavaScript.
+    Basicamente, nessa parte, você aprenderá como utilizar o JavaScript para fazer alterações no seu <strong>site da web.</strong></h4> <br>
+    
+    <h2><strong>Introdução</strong></h2>
+    <p>Como já dito algumas vezes, JavaScript DOM é a parte do JavaScript que você trabalha com alterações no site da web, ou seja,
+    através de alguns comandos, você consegue modificar a aparência do seu website através do <strong>DOM</strong>.</p> <br>
+
+    <h3><strong>O que é DOM?</strong></h3>
+    <div class="intro-dom">
+      <p><strong>DOM (Document Object Model)</strong> é basicamente uma <strong>representação hierárquica de um documento HTML</strong>, em que cada tag (<strong>p</strong>, <strong>h1</strong>, <strong>img</strong>, etc)
+      representa um <strong>nó</strong> no DOM. O DOM é muito importante para que haja a interação com o HTML usando JavaScript, porque é a partir daí que existe a ideia de usar o JavaScript 
+      para interatividade em um site,já que com o DOM já é possível, por exemplo, mostrar mensagens quando você clica em um botão. <br><br>
+      Apesar disso tudo, a intenção deste tutorial é ensinar o básico, dar uma introdução sobre esse tema, então, caso queiram se aprofundar mais em JavaScript, há muitos cursos na internet e 
+      também sites que ensinam JavaScript. Um exemplo é a <a href="http://https://www.w3schools.com/js/default.asp">w3schools</a>, que ensina bastante coisas sobre JavaScript para você aprender 
+      caso queira conhecer mais sobre a linguagem. <br><br> Vamos te ensinar <strong>4 métodos</strong> para você mandar mensagens para o seu site e interagir com o usuário. 
+      <strong>São eles:</strong></p>
+      <img src="img/Representação - DOM.jpg" alt="Representação-DOM">
+    </div>
+    <ul>
+      <li><strong>document.write</strong></li>
+      <li><strong>alert</strong></li>
+      <li><strong>confirm</strong></li>
+      <li><strong>prompt</strong></li>
+    </ul> <br>
+    
+    <h2>1 - document.write</h2>
+    <p><strong>Document</strong> é o ponto de partida para fazer as alterações no HTML, pois ele representa o <strong>documento HTML</strong> em que ele está inserido. Aí para realizar uma ação,
+    o comando sempre vem na frente do "document", nesse caso, <strong>write</strong>, que vai escrever no site como se fosse a tag <strong>p</strong> do html.</p>
+    <img class="img-1" src="img/code-snapshot/code-snapshot15.png" alt="Exemplo 1 - document.write">
+    <img class="img-2" src="img/exemplos-DOM/exemplo1-DOM.png" alt="Exemplo 1.1 - document.write"> 
+    <br><br>
+
+    <h2>2 - alert</h2>
+    <p>Manda um alerta para o navegador. Um exemplo muito comum nos sites é quando fazemos alterações neles e não as salvamos.</p>
+    <img class="img-3" src="img/code-snapshot/code-snapshot16.png" alt="Exemplo 2 - alert">
+    <img class="img-4" src="img/exemplos-DOM/exemplo2-DOM.png" alt="Exemplo 2.1 - alert" title="Exemplo de alert comum na internet">
+    <br><br>
+
+    <h2>3 - confirm</h2>
+    <p>Tem uma função parecida com a do alert, a única diferença é que ela vem com dois botões, um escrito "OK" e o outro "Cancelar".</p>
+    <img class="img-5" src="img/code-snapshot/code-snapshot17.png" alt="Exemplo 3 - confirm">
+    <img class="img-6" src="img/exemplos-DOM/exemplo3-DOM.png" alt="Exemplo 3.1 - confirm">
+    <br><br>
+
+    <h2>4 - prompt</h2>
+    <p>Também mostra a "caixinha" de alerta que nem no "alert" e no "confirm", porém ele mostra uma caixa de texto para você escrever nela.</p>
+    <img class="img-7" src="img/code-snapshot/code-snapshot18.png" alt="Exemplo 4 - prompt">
+    <img class="img-8" src="img/exemplos-DOM/exemplo4-DOM.png" alt="Exemplo4.1 - prompt">
+    <br><br>
+    <br><br>
+    <div class="end2">
+      <h1><strong>E aqui você finalizou o tutorial de JavaScript DOM!</strong></h1> <br>
+      <a href="end.html"><button type="button" class="btn btn-warning"><strong>Finalizar</strong></button></a>
+    </div> <br><br>
+</body>
+</html>

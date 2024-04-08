@@ -1,0 +1,25 @@
+body{
+    font-family: "Poppins";
+    margin-left: 50px;
+}
+nav{
+    margin-left: -50px;
+    display: flex;
+}
+p{
+    max-width: 50vw;
+    font-size: 18px;
+    text-align: justify;
+}
+#tutorial{
+    display: flex;
+    align-items: center;
+    max-width: 40vw;
+    gap: 20px;
+}
+.option-02{
+    gap: 20px;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+}
